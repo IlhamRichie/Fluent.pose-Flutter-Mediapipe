@@ -20,7 +20,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.DETECTION,
-      page: () => const DetectionView(),
+      page: () => DetectionView(),
       binding: DetectionBinding(),
     ),
   ];
