@@ -1,12 +1,12 @@
 import 'package:get/get.dart';
-import '../controllers/detection_controller.dart';
+import 'package:pose_fluent/app/modules/detection/controllers/detection_controller.dart';
 
-class DetectionBinding implements Bindings {
+class DetectionBinding extends Bindings {
   @override
   void dependencies() {
     Get.lazyPut<DetectionController>(
       () => DetectionController(),
-      fenix: true,
+      fenix: true, // Allows recreation when needed
     );
   }
 }
